@@ -1,74 +1,74 @@
 ###############»ñÈ¡°ïÖúÎÄ¼ş
-help(A) #
-args(A) #»ñÈ¡º¯ÊıµÄ²ÎÊı
-example(A) #²é¿´Aº¯ÊıµÄÀı×Ó
+help(A) 
+args(A) 		#»ñÈ¡º¯ÊıµÄ²ÎÊı
+example(A) 		#²é¿´Aº¯ÊıµÄÀı×Ó
 #¹¤×÷Ä¿Â¼
-getwd()    #²é¿´
-setwd("")     #ÉèÖÃ
-get(" ") #½ÓÊÜÒ»¸ö´ú±í¶ÔÏóÃû×ÖµÄ×Ö·û´®²ÎÊı£¬È»ºó·µ»Ø¸Ã¶ÔÏóµÄÄÚÈİ
-list.files()   #²é¿´µ±Ç°¹¤×÷Ä¿Â¼°üº¬µÄËùÓĞÎÄ¼ş
-update.packages() #¸üĞÂ°ü
-unloadNamespace("") #½â³ı°ü
-require() #¼ÓÔØ°ü²¢ÌáÊ¾ÊÇ·ñ¼ÓÔØ³É¹¦
+getwd()    		#²é¿´
+setwd("")     	#ÉèÖÃ
+get(" ") 		#½ÓÊÜÒ»¸ö´ú±í¶ÔÏóÃû×ÖµÄ×Ö·û´®²ÎÊı£¬È»ºó·µ»Ø¸Ã¶ÔÏóµÄÄÚÈİ
+list.files()   	#²é¿´µ±Ç°¹¤×÷Ä¿Â¼°üº¬µÄËùÓĞÎÄ¼ş
+update.packages() 			#¸üĞÂ°ü
+unloadNamespace("") 		#½â³ı°ü
+require() 					#¼ÓÔØ°ü²¢ÌáÊ¾ÊÇ·ñ¼ÓÔØ³É¹¦
 install.packages("pryr")
-pryt::call_tree() #²é¿´µ÷ÓÃº¯ÊıµÄµİ¹é½á¹¹
+pryt::call_tree() 			#²é¿´µ÷ÓÃº¯ÊıµÄµİ¹é½á¹¹
 #¶ÁÈ¡´¿ÎÄ±¾ÎÄ¼ş,ÓÃÖÆ±í·û£¨tab£©·Ö¸ôÁĞ
 names<-read.table("file", sep = " ",header = TRUE,na.strings = "È±Ê§Êı¾İĞÎÊ½",stringsAsFactors = FALSE  ,skip =  ,nrows = )   #1¡¢ÍêÕûÂ·¾¶£»2¡¢ÎÄ±¾Ãû³Æ£¨µ±Ç°¹¤×÷Ä¿Â¼£©
 #,skip¿ªÊ¼µÄĞĞÊı£¬nrow¶ÁÈ¡¶àÉÙĞĞÊı
 # read.table('F:\\RÓïÑÔ\\region.txt', header = F,sep = " ")
-getOption("digits") #µÃµ½nµÄÈ«¾ÖÉèÖÃ
-options(n = ) #ÉèÖÃÈ«¾Ö±äÁ¿
-getOption("warn") #²é¿´¾¯¸æ¼¶±ğ
-pdf() #°Ñ´´½¨µÄÍ¼ĞÎ±£´æµ½PDFÖĞ
+getOption("digits") 		#µÃµ½nµÄÈ«¾ÖÉèÖÃ
+options(n = ) 				#ÉèÖÃÈ«¾Ö±äÁ¿
+getOption("warn") 			#²é¿´¾¯¸æ¼¶±ğ
+pdf() 						#°Ñ´´½¨µÄÍ¼ĞÎ±£´æµ½PDFÖĞ
 #read¼Ò×å
-library(readr) #Õâ¸ö¶ÁÈ¡Êı¾İ¸üÖÇÄÜread_csv() read_table()
+library(readr) 				#Õâ¸ö¶ÁÈ¡Êı¾İ¸üÖÇÄÜread_csv() read_table()
 asda <- read.csv("F:/RÓïÑÔ/asdasdas.csv")
-read.csv() #·Ö¸ô·ûÄ¬ÈÏÉèÖÃÎª¶ººÅ£¬²¢¼ÙÉèÊı¾İÓĞ±êÌâĞĞ,skipºÍnrowÖ¸¶¨¶ÁÈ¡ÎÄ¼şÖĞµÄÄÄĞ©Î»ÖÃ,
+read.csv() 					#·Ö¸ô·ûÄ¬ÈÏÉèÖÃÎª¶ººÅ£¬²¢¼ÙÉèÊı¾İÓĞ±êÌâĞĞ,skipºÍnrowÖ¸¶¨¶ÁÈ¡ÎÄ¼şÖĞµÄÄÄĞ©Î»ÖÃ,
 #skip´ÓÄÄÒ»ĞĞ¿ªÊ¼£¬nrow´ÓÄÄÒ»ĞĞ½áÊø£¬sep="",ÉèÖÃ·Ö¸ô·ûºÅ,colClass = c("character")
-read.csv2() #ÓÃ¶ººÅ×÷ÎªĞ¡ÊıÎ»£¬²¢ÓÃ·ÖºÅ×÷Îª·Ö¸ô·û
+read.csv2() 				#ÓÃ¶ººÅ×÷ÎªĞ¡ÊıÎ»£¬²¢ÓÃ·ÖºÅ×÷Îª·Ö¸ô·û
 write.table(bb,"region.csv",sep=",") #±£´æCSVÎÄ¼ş
-read.delim() #Ê¹ÓÃ¾äºÅ×÷ÎªĞ¡ÊıÎ»
-read.delim2() #Ê¹ÓÃ¶ººÅ×÷ÎªĞ¡ÊıÎ»
-readLines() #½ÓÊÜÒ»¸öÎÄ¼şÂ·¾¶ºÍÒ»¸ö¿ÉÑ¡µÄ×î´óĞĞÊı×÷Îª²ÎÊıÀ´¶ÁÈ¡ÎÄ¼ş
+read.delim() 				#Ê¹ÓÃ¾äºÅ×÷ÎªĞ¡ÊıÎ»
+read.delim2() 				#Ê¹ÓÃ¶ººÅ×÷ÎªĞ¡ÊıÎ»
+readLines() 				#½ÓÊÜÒ»¸öÎÄ¼şÂ·¾¶ºÍÒ»¸ö¿ÉÑ¡µÄ×î´óĞĞÊı×÷Îª²ÎÊıÀ´¶ÁÈ¡ÎÄ¼ş
 names<-read.fwf("filenames",widths = c(A,B,C),header = TRUE) #¶ÁÈ¡¹Ì¶¨¿í¶ÈÎÄ¼ş£¬AÎªµÚÒ»¸öÔªËØµÄ×Ö·ûÊı,-1´ú±íÒ»¸ö×Ö·ûµÄÁĞ±»ºöÂÔ£¬Ïê¼û¡¶RÓïÑÔ¾­µä°¸Àı¡·p87 
-install.packages("XML") #¶ÁÈ¡XMLÎÄ¼ş
-install.packages("xlsx") #¶ÁÈ¡XLSXÎÄ¼ş
-read.xlsx(A,1) #¶ÁÈ¡AµÄµÚÒ»ÕÅ±í
+install.packages("XML") 	#¶ÁÈ¡XMLÎÄ¼ş
+install.packages("xlsx") 	#¶ÁÈ¡XLSXÎÄ¼ş
+read.xlsx(A,1) 				#¶ÁÈ¡AµÄµÚÒ»ÕÅ±í
 read.xlsx2()
 write.xlsx2()
 install.packages("readxl")
 read_excel()
-install.packages("openxlsx") #¿É¶ÁĞ´±à¼­xlsxÎÄ¼ş
+install.packages("openxlsx")#¿É¶ÁĞ´±à¼­xlsxÎÄ¼ş
 read.xlsx()
 write.xlsx()
 #ÆäËûÊı¾İÎÄ¼ş
 library(foreign)
 read.spss()
 read.octave()
-read.xport() #SAS
-read.dta() #stata
+read.xport() 				#SAS
+read.dta() 					#stata
 ####¶ÁÈ¡¸´ÔÓ¸ñÊ½Êı¾İÎÄ¼ş
 readLines("names.text", n = 10) #×î´ó¶ÁÈëÊ®ĞĞ
-scan("names.text",what = list(character(0), numeric(0), numeric(0))) #Ïê¼û¡¶RÓïÑÔ¾­µä°¸Àı¡·p98 
+scan("names.text",what = list(character(0), numeric(0), numeric(0))) 	#Ïê¼û¡¶RÓïÑÔ¾­µä°¸Àı¡·p98 
 #±£´æ
-write.csv(data,filenames,"Â·¾¶", row.names = FALSE) #¹Ø±ÕĞĞºÅ
+write.csv(data,filenames,"Â·¾¶", row.names = FALSE) 					#¹Ø±ÕĞĞºÅ
 #Ñ¹ËõÎÄ¼ş
 write.csv(filenames = bzfile("Â·¾¶"),row.names = FALSE)
 read.csv("filenames") #as.isÊÇÉèÖÃÌØ¶¨ÁĞµÄÊı¾İÀàĞÍµÄ£¬±ÈÈçnumeric,character.Èç¹û²»ÉèÖÃ£¬¾ÍÊÇÄ¬ÈÏµÄ°ÑÔ­À´µÄ×Ö·û×ª³ÉfactorĞÍµÄ
 #RÎÄ¼ş 
-search() #²é¿´ÒÑÔØÈëµÄR°ü
-data(names, package = "A") #Ê¹ÓÃA°üÖĞµÄnamesÊı¾İ
-data(package = "A") #²é¿´Êı¾İ¼¯
-library() #²é¿´ÒÑ°²×°µÄR°ü
-source("XX.R") #¶ÁÈ¡²¢Ö´ĞĞÄÚÈİ
+search() 							#²é¿´ÒÑÔØÈëµÄR°ü
+data(names, package = "A") 			#Ê¹ÓÃA°üÖĞµÄnamesÊı¾İ
+data(package = "A") 				#²é¿´Êı¾İ¼¯
+library() 							#²é¿´ÒÑ°²×°µÄR°ü
+source("XX.R") 						#¶ÁÈ¡²¢Ö´ĞĞÄÚÈİ
 save.image()
-names <- readRDS("filenames") #¶ÁÈ¡Ô­ÉúÊı¾İ£¬Ô­ÉúÊı¾İËÙ¶È¿ì¿Õ¼äĞ¡
+names <- readRDS("filenames") 		#¶ÁÈ¡Ô­ÉúÊı¾İ£¬Ô­ÉúÊı¾İËÙ¶È¿ì¿Õ¼äĞ¡
 saveRDS() #±£´æÔ­ÉúÊı¾İ
 (load("filenames.RData"))
-save(a,b,c,file = "filenames.RData") #±£´æ¶à¸öR¶ÔÏó
+save(a,b,c,file = "filenames.RData")#±£´æ¶à¸öR¶ÔÏó
 history(100) #ÏÔÊ¾×î½üÊ¹ÓÃµÄÃüÁî£¬Ä¬ÈÏ25´Î
 .Last.value #×î½üÒ»¸ö¼ÆËã³öµÄ±í´ïÊ½
-save(list = ls(), file = ".RData") #½«ËùÓĞ¶ÔÏó±£´æ
+save(list = ls(), file = ".RData") 	#½«ËùÓĞ¶ÔÏó±£´æ
 #µç×Ó±í¸ñ
 install.packages("XLConnect")
 library(XLConnect)
@@ -83,104 +83,102 @@ writeWorksheetToFile("file.xlsx",data = dataname ,sheet = "Sheet 1",
                      shartRow =1,startCol =1)
 
 ###############º¯Êı
-: #²úÉúµÄÊÇÕûÊı
-c() #²úÉúµÄÊÇ¸¡µãÊı
-demo(plotmath) #ÊıÑ§·ûºÅÑİÊ¾
-formals(a_function)  #²é¿´º¯ÊıµÄ²ÎÊı
+: 									#²úÉúµÄÊÇÕûÊı
+c() 								#²úÉúµÄÊÇ¸¡µãÊı
+demo(plotmath) 						#ÊıÑ§·ûºÅÑİÊ¾
+formals(a_function)  				#²é¿´º¯ÊıµÄ²ÎÊı
 args(a_function)
-table(b) #²é¿´B·ÖÀàÖĞÃ¿ÖÖ·ÖÀàµÄÊıÁ¿
-addmargins(table(b)) #¼ÆËã±íµÄ±ß¼ÊÖµ
-xtabs(~ A + B, data = ) #ÒÔAB·ÖÀà¿´ÆµÊı £¬ÊÊºÏ¶şÎ¬
-ftable(A + B ~ C, data = ) #ºáÏòAB£¬×İÏòC£¬¿´ÆµÊı£¬ÊÊºÏÈıÎ¬
-margin.table() #±ß¼ÊÆµÊı
-length(which(b == "dog")) #²é¿´dogµÄÊıÁ¿
+table(b) 							#²é¿´B·ÖÀàÖĞÃ¿ÖÖ·ÖÀàµÄÊıÁ¿
+addmargins(table(b)) 				#¼ÆËã±íµÄ±ß¼ÊÖµ
+xtabs(~ A + B, data = ) 			#ÒÔAB·ÖÀà¿´ÆµÊı £¬ÊÊºÏ¶şÎ¬
+ftable(A + B ~ C, data = ) 			#ºáÏòAB£¬×İÏòC£¬¿´ÆµÊı£¬ÊÊºÏÈıÎ¬
+margin.table() 						#±ß¼ÊÆµÊı
+length(which(b == "dog")) 			#²é¿´dogµÄÊıÁ¿
 formalArgs(a_function)
-do.call(a_function,list(a,b)) #ÈÃaºÍb°´ÕÕa_functionµÄ·½Ê½½øĞĞ
-round() #ËÄÉáÎåÈë
-factorial() #½×³Ë
-prod(1:5) #³Ë»ı1*2*3*4*5
-mean() #¾ùÖµ
-sample(c = 1:4,size = 2,replace = T
-       ,prob = c())  #ÓĞ·Å»Ø ÉèÖÃÈ¨Êı
-args() #²é¿´º¯ÊıµÄ²ÎÊı
-colSums() #ÁĞºÍ
-rowSums() #ĞĞºÍ
-cbind(x,y) #°´ÁĞÊä³öÊı¾İ
-f <- cut(data, breaks, labels = c()) #¶ÔÊı¾İ·Ö¼¶²¢Ìí¼Ó±êÇ©
-match(value,vec) #ÕÒµ½ÌØ¶¨ÖµµÄÎ»ÖÃ ,ÊÇÒ»¸öÏòÁ¿ÔÚµÚ¶ş¸öÏòÁ¿ÖĞµÚÒ»´ÎÆ¥ÅäµÄÎ»ÖÃ
-id <- match(g1, info$g2) #g1¸ù¾İg2Æ¥ÅäÊı¾İ£¬²¢·µ»Øg1ÔÚg2ÖĞµÄÎ»ÖÃ
-      info[id,] #²é¿´Æ¥Åä½á¹û
-which.max() #×î´óÖµµÄÎ»ÖÃ
-which.min() #×îĞ¡ÖµµÄÎ»ÖÃ
-replicate(10,f()) #½«f()ÔËĞĞ10´Î
-head(names,5) #²é¿´Ç°ÎåĞĞ
-tail(names) #²é¿´ºóÎåĞĞ
-options(width = n) #ÍØ¿íÊä³öµÄĞĞÊı
+do.call(a_function,list(a,b)) 		#ÈÃaºÍb°´ÕÕa_functionµÄ·½Ê½½øĞĞ
+round() 							#ËÄÉáÎåÈë
+factorial() 						#½×³Ë
+prod(1:5) 							#³Ë»ı1*2*3*4*5
+mean() 								#¾ùÖµ
+sample(1:4,size = 2,replace = T,prob = c())  		#ÓĞ·Å»Ø ÉèÖÃÈ¨Êı
+args() 								#²é¿´º¯ÊıµÄ²ÎÊı
+colSums() 							#ÁĞºÍ
+rowSums() 							#ĞĞºÍ
+cbind(x,y) 							#°´ÁĞÊä³öÊı¾İ
+f <- cut(data, breaks, labels = c())#¶ÔÊı¾İ·Ö¼¶²¢Ìí¼Ó±êÇ©
+match(value,vec) 					#ÕÒµ½ÌØ¶¨ÖµµÄÎ»ÖÃ ,ÊÇÒ»¸öÏòÁ¿ÔÚµÚ¶ş¸öÏòÁ¿ÖĞµÚÒ»´ÎÆ¥ÅäµÄÎ»ÖÃ
+id <- match(g1, info$g2) 			#g1¸ù¾İg2Æ¥ÅäÊı¾İ£¬²¢·µ»Øg1ÔÚg2ÖĞµÄÎ»ÖÃ
+info[id,] 							#²é¿´Æ¥Åä½á¹û
+which.max() 						#×î´óÖµµÄÎ»ÖÃ
+which.min() 						#×îĞ¡ÖµµÄÎ»ÖÃ
+replicate(10,f()) 					#½«f()ÔËĞĞ10´Î
+head(names,5) 						#²é¿´Ç°ÎåĞĞ
+tail(names) 						#²é¿´ºóÎåĞĞ
+options(width = n) 					#ÍØ¿íÊä³öµÄĞĞÊı
 ##############»ù±¾Í³¼ÆÁ¿ #Éè¶¨na.rm = TRUE ,¸æÖªRÓïÑÔºöÂÔÈ±Ê§Öµ
 mean(x)
 median(x)
 sd(x)
-var(x) #·½²î
-cor(x,y) #Ğ­·½²î
-cov(x,y) #Ïà¹ØÏµÊı
+var(x) 								#·½²î
+cor(x,y) 							#Ğ­·½²î
+cov(x,y) 							#Ïà¹ØÏµÊı
 sum()
 median()
-identical(A,B) #²é¿´A.BÊÇ·ñÏàµÈ
-B%/%A #ÕûÊı³ı·¨
-A%%B #ÓàÊı
-A%in%B #ÓÒ²à±äÁ¿ÖĞ°üº¬×ó²à±äÁ¿Ê±£¬ÎªTRUE
-ceiling() #ÏòÉÏÈ¡Õû
-floor() #ÏòÏÂÈ¡Õû
-Re(polyroot(c(-4,0,1))) #Çó½â x^2-4=0
-n^m #nµÄm´Î·½
-exp(n) #eµÄn´Î·½
+identical(A,B) 						#²é¿´A.BÊÇ·ñÏàµÈ
+B%/%A 								#ÕûÊı³ı·¨
+A%%B 								#ÓàÊı
+A%in%B 								#ÓÒ²à±äÁ¿ÖĞ°üº¬×ó²à±äÁ¿Ê±£¬ÎªTRUE
+ceiling() 							#ÏòÉÏÈ¡Õû
+floor() 							#ÏòÏÂÈ¡Õû
+Re(polyroot(c(-4,0,1))) 			#Çó½â x^2-4=0
+n^m 								#nµÄm´Î·½
+exp(n) 								#eµÄn´Î·½
 log(x,base = exp(1)) 
-is.finite() #ÅĞ¶ÏÊÇ·ñÓĞÏŞ
-is.infinite() #ÅĞ¶ÏÊÇ·ñÎŞÏŞ
-pmax(A,B) #ÏÈÕÒAÖĞµÄ×î´óÖµ£¬ÔÙÕÒBÖĞµÄ×î´óÖµ
+is.finite() 						#ÅĞ¶ÏÊÇ·ñÓĞÏŞ
+is.infinite() 						#ÅĞ¶ÏÊÇ·ñÎŞÏŞ
+pmax(A,B) 							#ÏÈÕÒAÖĞµÄ×î´óÖµ£¬ÔÙÕÒBÖĞµÄ×î´óÖµ
 pmin()
-
 #±È½ÏÕûÊıÖµÊÇ·ñÏàµÈÓÃ==
-  all.equal() #¼ì²éÊı×ÖÊÇ·ñÏàµÈ£¬Ìá¹©ÁËÒ»¸öÈİÈÌ¶È
-assign("names",data) #¸³Öµº¯Êı
-.Machine #ÏÔÊ¾RµÄÒ»Ğ©Êı×ÖĞÅÏ¢
-as.integer() #²é¿´Òò×ÓÖµµÄÕûÊı
-is.* as.* #¼ì²é¡¢×ª»»
-options(digits = n) #ÉèÖÃĞ¡Êıµã
-summary() #Îª²»Í¬µÄÊı¾İÀàĞÍÌá¹©»ã×ÜĞÅÏ¢
-str() #ÏÔÊ¾¶ÔÏóµÄ½á¹¹
-unclass() #ÏÔÊ¾Ò»¸öÕûÊıÏòÁ¿£¬ÓµÓĞÒ»¸ö½ĞlevelsµÄÊôĞÔ
-View() #°Ñ±äÁ¿ÏÔÊ¾Îªµç×Ó±í¸ñ
-new_names <- eidt(old_names) #¸ü¸Ä±£´æ
-ls() #ÁĞ³öËùÓĞ±äÁ¿µÄÃû³Æ
-rm(A,B,C) #ÒÆ³ıABC ±äÁ¿
-rm(list = ls()) #ÒÆ³ıËùÓĞ±äÁ¿
+all.equal() 						#¼ì²éÊı×ÖÊÇ·ñÏàµÈ£¬Ìá¹©ÁËÒ»¸öÈİÈÌ¶È
+assign("names",data) 				#¸³Öµº¯Êı
+.Machine 							#ÏÔÊ¾RµÄÒ»Ğ©Êı×ÖĞÅÏ¢
+as.integer() 						#²é¿´Òò×ÓÖµµÄÕûÊı
+is.* as.* 							#¼ì²é¡¢×ª»»
+options(digits = n) 				#ÉèÖÃĞ¡Êıµã
+summary() 							#Îª²»Í¬µÄÊı¾İÀàĞÍÌá¹©»ã×ÜĞÅÏ¢
+str() 								#ÏÔÊ¾¶ÔÏóµÄ½á¹¹
+unclass() 							#ÏÔÊ¾Ò»¸öÕûÊıÏòÁ¿£¬ÓµÓĞÒ»¸ö½ĞlevelsµÄÊôĞÔ
+View() 								#°Ñ±äÁ¿ÏÔÊ¾Îªµç×Ó±í¸ñ
+new_names <- eidt(old_names) 		#¸ü¸Ä±£´æ
+ls() 								#ÁĞ³öËùÓĞ±äÁ¿µÄÃû³Æ
+rm(A,B,C) 							#ÒÆ³ıABC ±äÁ¿
+rm(list = ls()) 					#ÒÆ³ıËùÓĞ±äÁ¿
 #ÏòÁ¿
-vector() #´´½¨Ò»¸öÖ¸¶¨ÀàĞÍºÍ³¤¶ÈµÄÊ¸Á¿
-seq.int() #´´½¨Ò»¸öĞòÁĞ
+vector() 							#´´½¨Ò»¸öÖ¸¶¨ÀàĞÍºÍ³¤¶ÈµÄÊ¸Á¿
+seq.int() 							#´´½¨Ò»¸öĞòÁĞ
 seq(from = , to = ,by = )
-seq(from = , to = ,length.out = n) #Éè¶¨³¤¶ÈÎªn
-length() #ÏòÁ¿ÖĞ°üº¬¶àÉÙÔªËØ
-nchar() #²é¿´Ã¿¸öÔªËØ°üº¬µÄ×Ö·û´®(×Ö·ûÊıÁ¿)
-names(A) <- c("","") #ÃüÃûÏòÁ¿µÄÃû³Æ
-which() #·µ»ØÂß¼­ÏòÁ¿ÖĞÎªTRUEµÄ²¿·Ö,·µ»ØÎ»ÖÃ
-rep() #ÖØ¸´Ê¹ÓÃÔªËØÀ´´´½¨ÏòÁ¿
-append(1:10, 99, after = n) #ÔÚ1£º10£¬n¸öÊıºó²åÈë99
-NROW() #·µ»ØÏòÁ¿»ò¾ØÕóµÄĞĞÊı»òÁĞÊı
-nrow() #½öÓÃÓÚ¾ØÕó
-identical(A, B) #ÅĞ¶Ï¶ÔÏóÊÇ·ñÏàÍ¬
-union(A, B) #ÇóºÏ¼¯
-intersect(A, B) #Çó½»¼¯
-setdiff(A, B) #Çó²î¼¯
-setequal(A, B) #ÅĞ¶ÏÊÇ·ñÎªÏàÍ¬¼¯ºÏ
-value %in% x #ÅĞ¶ÏvalueÊÇ·ñÔÚxÖĞ
-seq_along(x) #´´½¨x³¤¶ÈµÄĞòÁĞ
+seq(from = , to = ,length.out = n) 	#Éè¶¨³¤¶ÈÎªn
+length() 							#ÏòÁ¿ÖĞ°üº¬¶àÉÙÔªËØ
+nchar() 							#²é¿´Ã¿¸öÔªËØ°üº¬µÄ×Ö·û´®(×Ö·ûÊıÁ¿)
+names(A) <- c("","") 				#ÃüÃûÏòÁ¿µÄÃû³Æ
+which() 							#·µ»ØÂß¼­ÏòÁ¿ÖĞÎªTRUEµÄ²¿·Ö,·µ»ØÎ»ÖÃ
+rep() 								#ÖØ¸´Ê¹ÓÃÔªËØÀ´´´½¨ÏòÁ¿
+append(1:10, 99, after = n) 		#ÔÚ1£º10£¬n¸öÊıºó²åÈë99
+nrow() 								#·µ»ØÏòÁ¿»ò¾ØÕóµÄĞĞÊı»òÁĞÊı
+nrow() 								#½öÓÃÓÚ¾ØÕó
+identical(A, B) 					#ÅĞ¶Ï¶ÔÏóÊÇ·ñÏàÍ¬
+union(A, B) 						#ÇóºÏ¼¯
+intersect(A, B) 					#Çó½»¼¯
+setdiff(A, B) 						#Çó²î¼¯
+setequal(A, B) 						#ÅĞ¶ÏÊÇ·ñÎªÏàÍ¬¼¯ºÏ
+value %in% x 						#ÅĞ¶ÏvalueÊÇ·ñÔÚxÖĞ
+seq_along(x) 						#´´½¨x³¤¶ÈµÄĞòÁĞ
 ###############Êı×é
 names <- array(
   data,
   dim = c(a,b,c),
-  dimnames = list(
-    anames,
+  dimnames = list(					#dimnames=list(c("r1","r2"),c("c1","c2")) 
+    anames,							#Á½ĞĞÁ½ÁĞ
     bnames,
     cnames
   )
@@ -189,45 +187,44 @@ names <- array(
 matrix(
   data,
   nrow = 
-    byrow = TRUE, #°´ĞĞÌî³ä
+    byrow = TRUE, 					#°´ĞĞÌî³ä
   dimnames = list(
     a,
     b
   )
 )
-a%*%b  #ÄÚ³Ë·¨
-a%o%b #Íâ³Ë
-t(A) #×ªÖÃ
-solve(A) #ÇóÄæ
-diag(n, m) #Ò»¸ön½×µÄm¶Ô½Ç£¨µ¥Î»£©¾ØÕó
-dim(names) <- c(a,b) #ÎªnamesÖØËÜÎ¬¶È
-cbind() rbind() #°´ĞĞ°´ÁĞ°ó¶¨2¸ö¾ØÕó
-rownames(a) <- c("A","B","C") #ĞĞÃû
-colnames(a) <- c("A","B","C") #ÁĞÃû
-A[1,,drop = FALSE] #±£ÁôÎ¬¶È,½ûÖ¹½µÎ¬£¨ÓÉ¾ØÕó±äÎªÏòÁ¿£©
-nrow() #ĞĞÊı
-ncol() #ÁĞÊı
+a%*%b  								#ÄÚ³Ë·¨
+a%o%b 								#Íâ³Ë
+t(A) 								#×ªÖÃ
+solve(A) 							#ÇóÄæ
+diag(n, m) 							#Ò»¸ön½×µÄm¶Ô½Ç£¨µ¥Î»£©¾ØÕó
+dim(x) <- c(a,b) 					#ÎªxÖØËÜÎ¬¶È
+cbind() rbind() 					#°´ĞĞ°´ÁĞ°ó¶¨2¸ö¾ØÕó
+rownames(a) <- c("A","B","C") 		#ĞĞÃû
+colnames(a) <- c("A","B","C") 		#ÁĞÃû
+A[1,,drop = FALSE] 					#±£ÁôÎ¬¶È,½ûÖ¹½µÎ¬£¨ÓÉ¾ØÕó±äÎªÏòÁ¿£©
+nrow() 								#ĞĞÊı
+ncol() 								#ÁĞÊı
 
 ################ ÁĞ±í
 a_list <- list(a = dataA,
                b = dataB,
                c = dataC)
 names(a_list) <- c("anames","bnames","cnames")
-length(a_list) #·µ»Ø¶¥²ãÔªËØµÄÊıÁ¿
+length(a_list) 						#·µ»Ø¶¥²ãÔªËØµÄÊıÁ¿
 #ÏòÁ¿Ë÷Òı,[]²úÉúÁíÒ»¸öÁĞ±í£¬[[]]·µ»ØÁĞ±íÔªËØÖĞµÄÄÚÈİ£¬ÌîÏÂ±ê»òÕß¡°Ãû³Æ×Ö·û´®¡±£¬Ò²¿ÉÓÃ$·ûºÅ
-as.list() #×ª»¯ÁĞ±í
-as.numeric() #Èç¹ûÁĞ±íÃ¿¸öÔªËØ¶¼ÊÇ±êÁ¿Öµ£¬¿É×ª»¯ÎªÏòÁ¿
-unlist() #ÈôÁĞ±íÖĞ°üº¬·Ç±êÁ¿ÔªËØ£¬ÔòÓÃ
-c(a_list,b_list) #×éºÏÁĞ±í
-list[1] #·µ»ØÒ»¸öÁĞ±í
-list[[1]] #·µ»ØÔªËØ
-list[["names"]] #Ñ¡¶¨Ãû³ÆÎªnameµÄÔªËØ
-list["names"] #·µ»ØÁĞ±í
-list[c("A", "B", "C")] #·µ»ØÒ»¸ö²ÎÊıËù¾ö¶¨µÄÔªËØ¶ø¹¹³ÉµÄÁĞ±í
-list["names"] <- NULL #ÒÆ³ıÁĞ±í
-unlist() #½«ÁĞ±í×ª»¯ÎªÏòÁ¿
-listnames[sapply(listnames, is.null)] <- NULL #ÒÆ³ıÈ¡ÖµÎª¿ÕÖµµÄÔªËØ
-listnames[listnames = o] <- NULL #Ê¹ÓÃÌõ¼şÀ´ÒÆ³ıÁĞ±íÔªËØ
+as.list() 							#×ª»¯ÁĞ±í
+as.numeric() 						#Èç¹ûÁĞ±íÃ¿¸öÔªËØ¶¼ÊÇ±êÁ¿Öµ£¬¿É×ª»¯ÎªÏòÁ¿
+unlist() 							#ÈôÁĞ±íÖĞ°üº¬·Ç±êÁ¿ÔªËØ£¬ÔòÓÃ
+c(a_list,b_list) 					#×éºÏÁĞ±í
+list_name[1] 						#·µ»ØÒ»¸öÁĞ±í
+list_name[[1]] 						#·µ»ØÔªËØ
+list_name[["names"]] 				#Ñ¡¶¨Ãû³ÆÎªnameµÄÔªËØ
+list_name["names"] 					#·µ»ØÁĞ±í
+list_name[c("A", "B", "C")] 		#·µ»ØÒ»¸ö²ÎÊıËù¾ö¶¨µÄÔªËØ¶ø¹¹³ÉµÄÁĞ±í
+list_name["names"] <- NULL 			#ÒÆ³ıÁĞ±í
+list_name[sapply(listnames, is.null)] <- NULL 	#ÒÆ³ıÈ¡ÖµÎª¿ÕÖµµÄÔªËØ
+list_name[listnames = o] <- NULL 				#Ê¹ÓÃÌõ¼şÀ´ÒÆ³ıÁĞ±íÔªËØ
 
 
 ################# Êı¾İ¿ò
@@ -237,159 +234,158 @@ a_frame <- data.frame(
   c,
   row.names = c()   #ĞĞÃû
 )
-subset(data,logical,A) #´ÓdataÖĞÈ¡Âú×ãlogicalµÄAÁĞ£¬Ã»ÓĞAµÄ»°È¡È«²¿
+subset(data,logical,A) 				#´ÓdataÖĞÈ¡Âú×ãlogicalµÄAÁĞ£¬Ã»ÓĞAµÄ»°È¡È«²¿
 subset(iris,Sepal.Length > 5)$Sepal.Lengt 
-as.data.frame() #×ª±äÎªÊı¾İ¿ò
-data.frame(stringsAsFactors = FALSE) #Êı¾İ¿ò£¬Ã¿¸öÏòÁ¿Ö®¼äÓÃ¶ººÅ¸ô¿ª
-names <- rbind(names, new) #Ìí¼ÓĞĞÖÁÊı¾İ¿ò£¬±äÁ¿Ãû³ÆÒªÒ»ÖÂ
+as.data.frame() 					#×ª±äÎªÊı¾İ¿ò
+data.frame(stringsAsFactors = FALSE)#Êı¾İ¿ò£¬Ã¿¸öÏòÁ¿Ö®¼äÓÃ¶ººÅ¸ô¿ª
+names <- rbind(names, new) 			#Ìí¼ÓĞĞÖÁÊı¾İ¿ò£¬±äÁ¿Ãû³ÆÒªÒ»ÖÂ
 a <- data.frame(colnames = numeric(n),colnames2 = character(n)) #Ô¤·ÖÅäÊı¾İ¿ò
-data[[n]] #·µ»ØµÚnÁĞ,±äÎªÏòÁ¿
-data[n] #·µ»ØÒ»¸öµÚnÁĞµÄÊı¾İ¿ò
-data[["name"]] #·µ»ØnameÁĞµÄÏòÁ¿
-data$name #·µ»ØÒ»ÁĞ
-data["name"] #·µ»ØÊı¾İ¿ò
-subset(data, select=c(A,B,C), subset = (A > 0)) #ÓĞÌõ¼şµÄÑ¡ÔñĞĞºÍÁĞ select= A:C Ñ¡ÔñA¡¢B¡¢CÁĞÃû
-colnames(A) <- c("A","B","C") #ÖØÃüÃû
+data[[n]] 							#·µ»ØµÚnÁĞ,±äÎªÏòÁ¿
+data[n] 							#·µ»ØÒ»¸öµÚnÁĞµÄÊı¾İ¿ò
+data[["name"]] 						#·µ»ØnameÁĞµÄÏòÁ¿
+data$name 							#·µ»ØÒ»ÁĞ
+data["name"] 						#·µ»ØÊı¾İ¿ò
+subset(data, select=c(A,B,C), subset = (A > 0)) 	#ÓĞÌõ¼şµÄÑ¡ÔñĞĞºÍÁĞ select= A:C Ñ¡ÔñA¡¢B¡¢CÁĞÃû
+colnames(A) <- c("A","B","C") 		#ÖØÃüÃû
 edit()
 fix()
-clean <- na.omit(data) #´ÓÊı¾İ¿òÖĞÒÆ³ıNAÖµ
-subset(data,select = -A) #ÅÅ³ıÁĞ 
-names <- transform(names, a = a^2) #½«namesÖĞa¸ÄÎªaµÄÆ½·½
-cbind(A,B) #ºÏ²¢ÁĞ
-rbind(A,B) #ºÏ²¢ĞĞ
-transform(data,var1 = , var2 = ) #ĞŞ¸ÄVAR1ºÍVAR2
-m <- merge(A,B,by = "C")
+clean <- na.omit(data) 				#´ÓÊı¾İ¿òÖĞÒÆ³ıNAÖµ
+subset(data,select = -A) 			#ÅÅ³ıÁĞ 
+names <- transform(names, a = a^2) 	#½«namesÖĞa¸ÄÎªaµÄÆ½·½
+cbind(A,B) 							#ºÏ²¢ÁĞ
+rbind(A,B) 							#ºÏ²¢ĞĞ
+transform(data,var1 = , var2 = ) 	#ĞŞ¸ÄVAR1ºÍVAR2
+m <- merge(A,B,by = "C")			#ºÏ²¢
 merge(a_frame,b_frame,by = "rolnames",all = T)
-f <- factor(names, c("A", "B", "C")) #¹æ¶¨Òò×ÓºÍÒò×ÓË³Ğò
-levels(name) <- rev(factor(name)) #Êı¾İ¡¢Òò×Ó¶¼·´¹ıÀ´
-factor(name, levels = rev(name)) #Êı¾İ²»±ä¡¢Òò×Ó·´¹ıÀ´
-by(data, data$factor, FUN) #·Ö×éÓ¦ÓÃº¯Êı£¬·µ»ØÁĞ±í
+f <- factor(names, c("A", "B", "C"))#¹æ¶¨Òò×ÓºÍÒò×ÓË³Ğò
+levels(name) <- rev(factor(name)) 	#Êı¾İ¡¢Òò×Ó¶¼·´¹ıÀ´
+factor(name, levels = rev(name)) 	#Êı¾İ²»±ä¡¢Òò×Ó·´¹ıÀ´
+by(data, data$factor, FUN) 			#·Ö×éÓ¦ÓÃº¯Êı£¬·µ»ØÁĞ±í
 aggregate(data[c("A","B")], list(factor = data$factor), FUN, na.omit = T) #·Ö×éÓ¦ÓÃº¯Êı
 aggregate(iris[1:4],list(iris$Species),mean)
 name <- stack(list(v1 = v1, v2 = v2, v3 = v3)) #»òÊı¾İ¿ò
-unstack(data, values ~ ind) #Äæ²Ù×÷
-str(names) #²é¿´½á¹¹
-framenames[1:2,1,drop = FALSE] #Èç¹ûÖ»ÌáÈ¡1ÁĞ£¬R»á·µ»ØÒ»¸öÏòÁ¿£¬ÈôÔÚÀ¨ºÅÀïÌí¼Ódrop,Ôò·µ»ØÒ»¸öÊı¾İ¿ò(½ûÖ¹¼õÉÙÎ¬¶È)
-rownames()
-colnames()
-View() #²é¿´Êı¾İÊÓÍ¼
+unstack(data, values ~ ind) 		#Äæ²Ù×÷
+str(names) 							#²é¿´½á¹¹
+framenames[1:2,1,drop = FALSE] 		#Èç¹ûÖ»ÌáÈ¡1ÁĞ£¬R»á·µ»ØÒ»¸öÏòÁ¿£¬ÈôÔÚÀ¨ºÅÀïÌí¼Ódrop,Ôò·µ»ØÒ»¸öÊı¾İ¿ò(½ûÖ¹¼õÉÙÎ¬¶È)
+rownames()							#²é¿´ĞĞÃû
+colnames()							#²é¿´ÁĞÃû
+View() 								#²é¿´Êı¾İÊÓÍ¼
 rowSums() 
 rowMeans()
 colSums()
 colMeans()
-with() #ÔÊĞí´úÂëÄÚ²¿Ö±½Ó·ÃÎÊÁĞÃû
+with() 								#ÔÊĞí´úÂëÄÚ²¿Ö±½Ó·ÃÎÊÁĞÃû
 with(data, var[var1 == ""])
 with(data, table(var1[var2 == ""])) #Í³¼Ævar1ÖĞvar2==µÄÆµÊıÍ³¼Æ±í
-within() #Í¬ÉÏ£¬²¢¿ÉĞŞ¸ÄÊı¾İ
-attach() #¿ÉÒÔÖ±½ÓÊ¹ÓÃaµÄ±äÁ¿,µ÷ÓÃattach()ºó¶Ô±äÁ¿µÄĞŞ¸Ä²¢²»»á·´Ó³µ½µ÷ÓÃdetach£¨£©Ê±µÄÔ­Êı¾İ
-detach() #½áÊøattach
-
+within() 							#Í¬ÉÏ£¬²¢¿ÉĞŞ¸ÄÊı¾İ
+attach() 							#¿ÉÒÔÖ±½ÓÊ¹ÓÃaµÄ±äÁ¿,µ÷ÓÃattach()ºó¶Ô±äÁ¿µÄĞŞ¸Ä²¢²»»á·´Ó³µ½µ÷ÓÃdetach£¨£©Ê±µÄÔ­Êı¾İ
+detach() 							#½áÊøattach
+#ÅÅĞò
+sort(a,decreasing = T) 				#´ÓĞ¡µ½´óÅÅÁĞ,decreasing = T´Ó´óµ½Ğ¡ÅÅÁĞ
+order() 							#·µ»ØÅÅĞòºó¸÷Êı¾İÔªËØÔÚÔ­Êı¾İ×éÖĞµÄÎ»ÖÃË÷Òı
+var1 <- var[order(var$a),] 			#¸ù¾İaÅÅĞòµÄvar
+rank() 								#·µ»ØÔÚÏòÁ¿ÖĞµÄÅÅÃû
 ###############Ô­×ÓĞÔÏòÁ¿
-typeof() #²é¿´Ä³¸ö¶ÔÏóÊÇÊ²Ã´ÀàĞÍ,·µ»Ø¶ÔÏóµÄµÍ¼¶ÄÚ²¿½á¹¹,·µ»ØÄÚ²¿´¢´æÄ£Ê½
-is.vector() #ÊÇ·ñ
-length() #³¤¶È
-attributes()  #ÊôĞÔ
-names() <- c() #Ãû³ÆÊôĞÔ,¼Ó¡°¡±
-dim()<-c() #Î¬¶ÈÊôĞÔ ĞĞ£¬ÁĞ£¬×é
-matrix() #×é³É¾ØÕó
-array() #×é³ÉÊı×é
-class() #Àà,·µ»Ø¶ÔÏóµÄ¸ß¼¶Àà£¬·µ»ØS3ÀàÃû³Æ
-methods("") #·½·¨·ÖÅÉ£¬²é¿´¸ù¾İº¯ÊıµÄÀàÍê³É·½·¨·ÖÅÉ
-
-
-
+typeof() 							#²é¿´Ä³¸ö¶ÔÏóÊÇÊ²Ã´ÀàĞÍ,·µ»Ø¶ÔÏóµÄµÍ¼¶ÄÚ²¿½á¹¹,·µ»ØÄÚ²¿´¢´æÄ£Ê½
+is.vector() 						#ÊÇ·ñ
+length() 							#³¤¶È
+attributes()  						#ÊôĞÔ
+matrix() 							#×é³É¾ØÕó
+array() 							#×é³ÉÊı×é
+class() 							#Àà,·µ»Ø¶ÔÏóµÄ¸ß¼¶Àà£¬·µ»ØS3ÀàÃû³Æ
+methods("") 						#·½·¨·ÖÅÉ£¬²é¿´¸ù¾İº¯ÊıµÄÀàÍê³É·½·¨·ÖÅÉ
 
 # = ÊÇ¸³Öµ·û ==ÊÇÂß¼­ÔËËã·û
 #Ê¹ÓÃÂß¼­ÖµĞŞ¸ÄÊı¾İ
-frame.name$B[frame.name$A == "c"] <- 2 #ÈôA=c,Ôò°ÑframeÖĞBµÄÖµ±äÎª2,¿É½«frame.name$A == "c"¸³ÖµÎªÒ»¸ö¶ÔÏó¡£
-frame.name[frame.name$A == "c",] #½«AÖĞµÈÓÚcµÄĞĞÈ«²¿ÁĞ³ö 
+frame.name$B[frame.name$A == "c"] <- 2 	#ÈôA=c,Ôò°ÑframeÖĞBµÄÖµ±äÎª2,¿É½«frame.name$A == "c"¸³ÖµÎªÒ»¸ö¶ÔÏó¡£
+frame.name[frame.name$A == "c",] 		#½«AÖĞµÈÓÚcµÄĞĞÈ«²¿ÁĞ³ö 
 ###################RµÄ»·¾³ÏµÍ³
 install.packages("devtools")
-parens(all = TRUE) #·µ»Øµ±Ç°»á»°°üº¬µÄ»·¾³ÁĞ±í
-as.environment() #Ö¸Ïò»·¾³Ê÷ÖĞµÄÈÎÒâÒ»¸ö»·¾³
-parent.env() #²é¿´Ä³Ò»¸ö»·¾³µÄ¸¸»·¾³
-objects() #Óëls()ÀàËÆ
-ls(envir = ) ls.str(envir = ) #²é¿´´æ´¢ÔÚ»·¾³ÖĞµÄ¶ÔÏó£¬Ç°Õß·µ»Ø¶ÔÏóÃû³Æ£¬ºóÕßÕ¹Ê¾Ã¿¸ö¶ÔÏóµÄ½á¹¹
-ls.str(mode = "") #²é¿´²»Í¬Ä£Ê½µÄ¶ÔÏó
-ls.str(pattern = "") #ÕıÔò±í´ïÊ½µÄĞÎÊ½±íÊö
+parens(all = TRUE) 					#·µ»Øµ±Ç°»á»°°üº¬µÄ»·¾³ÁĞ±í
+as.environment() 					#Ö¸Ïò»·¾³Ê÷ÖĞµÄÈÎÒâÒ»¸ö»·¾³
+parent.env() 						#²é¿´Ä³Ò»¸ö»·¾³µÄ¸¸»·¾³
+objects() 							#Óëls()ÀàËÆ
+ls(envir = ) ls.str(envir = ) 		#²é¿´´æ´¢ÔÚ»·¾³ÖĞµÄ¶ÔÏó£¬Ç°Õß·µ»Ø¶ÔÏóÃû³Æ£¬ºóÕßÕ¹Ê¾Ã¿¸ö¶ÔÏóµÄ½á¹¹
+ls.str(mode = "") 					#²é¿´²»Í¬Ä£Ê½µÄ¶ÔÏó
+ls.str(pattern = "") 				#ÕıÔò±í´ïÊ½µÄĞÎÊ½±íÊö
 rm()
-rm(list = ls()) #É¾³ıÈ«²¿¶ÔÏó
-exists("", names) #u£¬¿ÉÉÏËİµ½¸¸»·¾³Ñ°ÕÒ
-ls(all.names = TRUE) #ÏÔÊ¾.¿ªÍ·µÄ±äÁ¿Ãû
-head(globalenv()$A,3) #ÔÚÄ³¸öÌØ¶¨»·¾³ÖĞ£¬Ê¹ÓÃ$ÌáÈ¡Ä³¸ö¶ÔÏó
+rm(list = ls()) 					#É¾³ıÈ«²¿¶ÔÏó
+exists("", names) 					#u£¬¿ÉÉÏËİµ½¸¸»·¾³Ñ°ÕÒ
+ls(all.names = TRUE) 				#ÏÔÊ¾.¿ªÍ·µÄ±äÁ¿Ãû
+head(globalenv()$A,3) 				#ÔÚÄ³¸öÌØ¶¨»·¾³ÖĞ£¬Ê¹ÓÃ$ÌáÈ¡Ä³¸ö¶ÔÏó
 assign("newobject",value,envir = globalenv()) #½«ĞÂ¶ÔÏó±£´æµ½Ä³¸öÌØ¶¨»·¾³ÖĞ
-environment() #²é¿´µ±Ç°µÄ»î»·¾³
-environment(fx) #²é¿´fxµÄÔ­»·¾³
-trunc() #·µ»ØÕûÊı²¿·Ö
-unique() #·µ»ØÒ»¸öÏòÁ¿ÖĞµÄËùÓĞ·ÇÖØ¸´Öµ
-unname() #·µ»ØÒ»¸ö¶ÔÏóµÄ¸±±¾£¬µ«ÊÇ»á½«ÆäÃû³ÆÊôĞÔÒÆ³ı
-print() #½«½á¹ûÊäÈëµ½¿ØÖÆÌ¨µÄ´°¿ÚÖĞ #Ö»ÄÜÏÔÊ¾Ò»¸ö¶ÔÏó,ÄÜ¹»ÏÔÊ¾ÌØÊâ×Ö·û
-expand.grid(A,B,stringsAsFactors = F) #AºÍBÁ½¸öÏòÁ¿µÄËùÓĞ×éºÏ
-outer(string1, string2, paste, sep = "") #Éú³É×Ö·û´®ËùÓĞ³É¶Ô×éºÏ
+environment() 						#²é¿´µ±Ç°µÄ»î»·¾³
+environment(fx) 					#²é¿´fxµÄÔ­»·¾³
+trunc() 							#·µ»ØÕûÊı²¿·Ö
+unique() 							#·µ»ØÒ»¸öÏòÁ¿ÖĞµÄËùÓĞ·ÇÖØ¸´Öµ
+unname() 							#·µ»ØÒ»¸ö¶ÔÏóµÄ¸±±¾£¬µ«ÊÇ»á½«ÆäÃû³ÆÊôĞÔÒÆ³ı
+print() 							#½«½á¹ûÊäÈëµ½¿ØÖÆÌ¨µÄ´°¿ÚÖĞ #Ö»ÄÜÏÔÊ¾Ò»¸ö¶ÔÏó,ÄÜ¹»ÏÔÊ¾ÌØÊâ×Ö·û
+expand.grid(A,B,stringsAsFactors = F) 		#AºÍBÁ½¸öÏòÁ¿µÄËùÓĞ×éºÏ
+outer(string1, string2, paste, sep = "") 	#Éú³É×Ö·û´®ËùÓĞ³É¶Ô×éºÏ
 a <- outer(string1, string2, paste, sep = "") ;
-a[!lower.tri(a)] #Éú³É·ÇÖØ¸´×éºÏ
+a[!lower.tri(a)] 					#Éú³É·ÇÖØ¸´×éºÏ
 
 #####################×Ö·û´®ºÍÒò×Ó
-paste(c(A,B),c,sep = "-") #A-C B-C #pasteÄÜ¸³Öµ¶ÔÏó£¬cat²»ÄÜ
-paste(c(A,B),c,collapse = ",") #A C,B C
-paste0(c(A,B),c) #AC BC
-toString(X,width = 40) #½«ÏòÁ¿±ä³É×Ö·û´®²¢ÄÜÏŞÖÆ×Ö·û
-cat("a") #´øÒıºÅ,¿ÉÒÔ½«¶à¸ö¶ÔÏóÁ¬½Ó²¢ÒÔÁ¬ĞøµÄ·½Ê½ÏÔÊ¾£¬°üº¬ÌØÊâ×Ö·ûÊ±²»ÏÔÊ¾
+paste(c(A,B),c,sep = "-") 			#A-C B-C #pasteÄÜ¸³Öµ¶ÔÏó£¬cat²»ÄÜ
+paste(c(A,B),c,collapse = ",") 		#A C,B C
+paste0(c(A,B),c) 					#AC BC
+toString(X,width = 40) 				#½«ÏòÁ¿±ä³É×Ö·û´®²¢ÄÜÏŞÖÆ×Ö·û
+cat("a") 							#´øÒıºÅ,¿ÉÒÔ½«¶à¸ö¶ÔÏóÁ¬½Ó²¢ÒÔÁ¬ĞøµÄ·½Ê½ÏÔÊ¾£¬°üº¬ÌØÊâ×Ö·ûÊ±²»ÏÔÊ¾
 cat("A",",","B",sep = "")
-message() #±Ècat()ÕıÊ½
-as.character() #½«Ò»¸öÒò×ÓÇ¿ÖÆ×ª»¯Îª×Ö·û´®
-noquote() #×Ö·û´®ÏòÁ¿²»´øÒıºÅ
-quote() #²¶»ñº¯Êı£¬µ«²»Ö´ĞĞ
-substitute() #×÷ÓÃÓÚÈÎÒâµÄÓÃ»§ÊäÈë±í´ïÊ½
-call() #´´½¨Ò»¸ö´øÓĞÏàÍ¬²ÎÊıµÄÏàÍ¬º¯ÊıµÄµ÷ÓÃ
-as.call() #½«Ò»¸öµ÷ÓÃ³É·ÖµÄÁĞ±í×ª»»Îªµ÷ÓÃ
-eval(fun, list(x =)) #Ö´ĞĞµ÷ÓÃµÄº¯Êı
-eval(fun, env) #´æÔÚfun²ÎÊıµÄenv
+message() 							#±Ècat()ÕıÊ½
+as.character() 						#½«Ò»¸öÒò×ÓÇ¿ÖÆ×ª»¯Îª×Ö·û´®
+noquote() 							#×Ö·û´®ÏòÁ¿²»´øÒıºÅ
+quote() 							#²¶»ñº¯Êı£¬µ«²»Ö´ĞĞ
+substitute() 						#×÷ÓÃÓÚÈÎÒâµÄÓÃ»§ÊäÈë±í´ïÊ½
+call() 								#´´½¨Ò»¸ö´øÓĞÏàÍ¬²ÎÊıµÄÏàÍ¬º¯ÊıµÄµ÷ÓÃ
+as.call() 							#½«Ò»¸öµ÷ÓÃ³É·ÖµÄÁĞ±í×ª»»Îªµ÷ÓÃ
+eval(fun, list(x =)) 				#Ö´ĞĞµ÷ÓÃµÄº¯Êı
+eval(fun, env) 						#´æÔÚfun²ÎÊıµÄenv
 formatC(x,digits = 3,width = 10,format = ,flag = "+") #½«AÊı×ÖÏòÁ¿±äÎª3¸öÊı×ÖµÄ×Ö·û´®ÏòÁ¿,ÖĞ¼ä¼Ó¿Õ¸ñ£¬¿ÆÑ§¼ÆÊı·¨,Ç°Ãæ¼Ó+
 format()
-prettyNum() #ÊÊºÏ¸ñÊ½»¯ÄÇĞ©·Ç³£´ó»òÕß·Ç³£Ğ¡µÄÊı×Ö
-cat("a?b")  #\t ²åÈëÖÆ±í·û \r \r\n»»ĞĞ·û ´òÓ¡Ğ±¸ÜÊ±ĞèÒª´ò\\£¬´òË«ÒıºÅÇ°¼Ó\,fill =TRUE Ê¹¹Ò¹â±êÔÚÒ»ĞĞ½áÊøºóÒÆ¶¯µ½ÏÂÒ»ĞĞ
-toupper("") #´óĞ´
-tolower("") #Ğ¡Ğ´
-substr(x, start, stop) #½ØÈ¡×Ö·û´®,Ç¿ÖÆ½«ÊıÖµĞÍ±äÁ¿×ª»»Îª×Ö·ûĞÍ±äÁ¿
-sprintf() #¸ñÊ½»¯ÎÄ±¾£¨·Ç³£ÖØÒª£©¡¶RÓïÑÔ±à³ÌÖ¸ÄÏ¡·p164
-trimws("A", which = ) #Ïû³ıA×óÓÒ±äÁ¿µÄ¿Õ¸ñ£¬¿É¿ØÖÆleft/right
-sub(old, new, string) #Ìæ´úµÚÒ»¸ö×Ó´®
-gsub(old, new, string) #Ìæ´úËùÓĞ¸ö×Ó´®
+prettyNum() 						#ÊÊºÏ¸ñÊ½»¯ÄÇĞ©·Ç³£´ó»òÕß·Ç³£Ğ¡µÄÊı×Ö
+cat("a?b")  						#\t ²åÈëÖÆ±í·û \r \r\n»»ĞĞ·û ´òÓ¡Ğ±¸ÜÊ±ĞèÒª´ò\\£¬´òË«ÒıºÅÇ°¼Ó\,fill =TRUE Ê¹¹Ò¹â±êÔÚÒ»ĞĞ½áÊøºóÒÆ¶¯µ½ÏÂÒ»ĞĞ
+toupper("") 						#´óĞ´
+tolower("") 						#Ğ¡Ğ´
+substr(x, start, stop) 				#½ØÈ¡×Ö·û´®,Ç¿ÖÆ½«ÊıÖµĞÍ±äÁ¿×ª»»Îª×Ö·ûĞÍ±äÁ¿
+sprintf() 							#¸ñÊ½»¯ÎÄ±¾£¨·Ç³£ÖØÒª£©¡¶RÓïÑÔ±à³ÌÖ¸ÄÏ¡·p164
+trimws("A", which = ) 				#Ïû³ıA×óÓÒ±äÁ¿µÄ¿Õ¸ñ£¬¿É¿ØÖÆleft/right
+sub(old, new, string)				#Ìæ´úµÚÒ»¸ö×Ó´®
+gsub(old, new, string) 				#Ìæ´úËùÓĞ¸ö×Ó´®
 substring(text, first, last = 1000000L) #×¢ÒâÇø±ğ
-strsplit(a,",?",fixed = TRUE) #fixed = TRUE±íÊ¾ÊÇ¹Ì¶¨³¤¶ÈµÄ×Ö·û´®¶ø·ÇÕıÔò±í´ïÊ½ ºöÂÔ£¬¸ù¾İ·Ö¸ô·û·Ö¸î×Ö·û´®
-strsplit(a, split = ",") #½«aÎÄ±¾°´,·Ö¸î³ÉÁĞ±í
-file.path("c:","A","B","C")  #´´½¨ÏµÍ³ÎÄ¼şc:/A/B/C
+strsplit(a,",?",fixed = TRUE) 		#fixed = TRUE±íÊ¾ÊÇ¹Ì¶¨³¤¶ÈµÄ×Ö·û´®¶ø·ÇÕıÔò±í´ïÊ½ ºöÂÔ£¬¸ù¾İ·Ö¸ô·û·Ö¸î×Ö·û´®
+strsplit(a, split = ",") 			#½«aÎÄ±¾°´,·Ö¸î³ÉÁĞ±í
+file.path("c:","A","B","C")  		#´´½¨ÏµÍ³ÎÄ¼şc:/A/B/C
 #×Ö·û´®´¦Àí°üstringr Ïê¼û¼«¿Í P137
 
 ##ÕıÔò±í´ïÊ½£¬\ĞèÒªĞ´³É\\±ÜÃâ×ªÒå
-library(stringr)  #¸Ã°ü¼ò»¯ÁËÕıÔò±í´ïÊ½µÄÊ¹ÓÃ
-str_match(txt,"pattern") #×¢ÒâÓÃÀ¨ºÅ×ö±ê¼Ç
-readLines("") #¶ÁÈ¡ÎÄ±¾
-grep(pattern,data) #patternÎªÕıÔò±í´ïÊ½ £¬·µ»ØĞĞ
+library(stringr)  					#¸Ã°ü¼ò»¯ÁËÕıÔò±í´ïÊ½µÄÊ¹ÓÃ
+str_match(txt,"pattern") 			#×¢ÒâÓÃÀ¨ºÅ×ö±ê¼Ç
+readLines("") 						#¶ÁÈ¡ÎÄ±¾
+grep(pattern,data) 					#patternÎªÕıÔò±í´ïÊ½ £¬·µ»ØĞĞ
 
 #Òò×Ó
-levels(a$b) #²é¿´Òò×ÓË®Æ½
-nlevels(a$b) #²é¿´Ë®Æ½¼¶Êı
-a <- factor(b) #´´½¨Òò×ÓË®Æ½
+levels(a$b) 						#²é¿´Òò×ÓË®Æ½
+nlevels(a$b) 						#²é¿´Ë®Æ½¼¶Êı
+a <- factor(b) 						#´´½¨Òò×ÓË®Æ½
 factor(a,levels = c("1","2"), labels = c("one","two")) #¸ü¸ÄÒò×ÓË®Æ½Ë³Ğò,Òò×ÓµÄÃû³Æ
-levels(a,levels = c("","")) #Ö±½Ó¸Ä±äÒò×ÓË®Æ½Öµ£¬²»ÊÇÎÒÃÇÏëÒªµÄ¡£
-droplevels() #È¥µôÒò×ÓË®Æ½
-ordered(A,b) #°´ÕÕb¸øÒò×ÓË®Æ½ÅÅĞò
-a <- cut(A,seq.int(16,66,10)) #½«AµÄÁ¬Ğø±äÁ¿ÇĞ¿é±äÎªÒò×ÓË®Æ½
+levels(a,levels = c("","")) 		#Ö±½Ó¸Ä±äÒò×ÓË®Æ½Öµ£¬²»ÊÇÎÒÃÇÏëÒªµÄ¡£
+droplevels() 						#È¥µôÒò×ÓË®Æ½
+ordered(A,b) 						#°´ÕÕb¸øÒò×ÓË®Æ½ÅÅĞò
+a <- cut(A,seq.int(16,66,10)) 		#½«AµÄÁ¬Ğø±äÁ¿ÇĞ¿é±äÎªÒò×ÓË®Æ½
 cut(d,c(0,2,5),labels = F)
-is.factor() #ÅĞ¶Ï¸ø¶¨ÖµÊÇ·ñÒò×Ó
-ordered(names, c("A","B")) #´´½¨ÓĞĞòÒò×Ó
-is.ordered() #ÅĞ¶ÏÊÇ·ñÎªÓĞĞòÒò×Ó
+is.factor() 						#ÅĞ¶Ï¸ø¶¨ÖµÊÇ·ñÒò×Ó
+ordered(names, c("A","B")) 			#´´½¨ÓĞĞòÒò×Ó
+is.ordered() 						#ÅĞ¶ÏÊÇ·ñÎªÓĞĞòÒò×Ó
 #Éú³ÉÒò×ÓË®Æ½
 #ºÏ²¢Òò×Ó
 ###############################ÈÕÆÚºÍÊ±¼ä
 #RÖĞ×Ô´ø3¸öÈÕÆÚºÍÊ±¼äÀà£ºPOXIXct¡¢POSIXlt¡¢Date¡£POXIXct×îÊÊºÏÓë´¢´æºÍ¼ÆËã¼ÆËãÊ±¼ä£¬POSIXlt
 #×îÊÊÓÃÓëÌáÈ¡ÈÕÆÚÖĞµÄÄ³¸öÌØ¶¨²¿·Ö¡£Date×îÊÊÓÃÓÚ²»ÔÚºõÒ»ÌìÖĞµÄÄ³¸öÊ±¿Ì
-Sys.time() #ÒÔPOXIXctµÄĞÎÊ½·µ»Øµ±Ç°µÄÈÕÆÚºÍÈÕÆÚ
-as.Date() #µ±ÌìÈÕÆÚ
-as.Date("...",format = "") #½«×Ö·û´®×ª»»ÎªÊ±¼ä
-strptime("char","format") #½«×Ö·û´®×ª»»ÎªÊ±¼ä
+sys.time() 							#ÒÔPOXIXctµÄĞÎÊ½·µ»Øµ±Ç°µÄÈÕÆÚºÍÈÕÆÚ
+sys.Date() 							#µ±ÌìÈÕÆÚ
+as.Date("...",format = "") 			#½«×Ö·û´®×ª»»ÎªÊ±¼ä
+strptime("char","format") 			#½«×Ö·û´®×ª»»ÎªÊ±¼ä
 #½âÎöÈÕÆÚ£º%HĞ¡Ê±£¨24£© %M·ÖÖÓ %SÃë %mÔÂÊı %dµ±ÔÂµÄµÚ¼¸Ìì %YËÄÎ»ÊıµÄÄê·İ
 #¸ñÊ½»¯ÈÕÆÚ ½«ÈÕÆÚ±äÁ¿×ª»»Îª×Ö·û´®
 strftime(names,"%%%%")
@@ -399,28 +395,29 @@ difftime(A,B,units = )
 seq(A,B,by = "1 year")
 ########################Êı¾İÇåÀíºÍ×ª»»
 library(stringr)
-str_detect(names,fixed(",")) #ÕÒ³önamesÊı¾İÖĞ£¬°üº¬£¬µÄĞĞ
+str_detect(names,fixed(",")) 		#ÕÒ³önamesÊı¾İÖĞ£¬°üº¬£¬µÄĞĞ
 #È±Ê§Öµ
-complete.cases() #¸æËßÄÄĞ©ĞĞÃ»ÓĞÈ±Ê§Öµ£¬¸ø³öÂß¼­Öµ
-names[complete.cases()] #¸ø³öÎŞÈ±Ê§Öµ
-names[!complete.cases()] #¸ø³öÈ±Ê§Öµ
-na.omit() #É¾³ıÊı¾İ¿òÖĞ´øÓĞÈ±Ê§ÖµµÄĞĞ£¬na.exlude() Ò»Ñù
-na.fail() #¼ì²éÓĞÎŞÈ±Ê§Öµ£¬´úÌæNA
+complete.cases() 					#¸æËßÄÄĞ©ĞĞÃ»ÓĞÈ±Ê§Öµ£¬¸ø³öÂß¼­Öµ
+names[complete.cases()] 			#¸ø³öÎŞÈ±Ê§ÖµµÄÊı¾İ
+names[!complete.cases()] 			#¸ø³öÈ±Ê§Öµ
+na.omit() 							#É¾³ıÊı¾İ¿òÖĞ´øÓĞÈ±Ê§ÖµµÄĞĞ£¬na.exlude() Ò»Ñù
+na.fail() 							#¼ì²éÓĞÎŞÈ±Ê§Öµ£¬´úÌæNA
 install.packages("zoo")
 library(zoo)
-na.locf() #·ÇÈ±Ê§ÖµºóÃæ½ô¸ú×ÅÒ»¸öÈ±Ê§ÖµÊ±£¬¾ÍÓÃ¸Ã·ÇÈ±Ê§ÖµÌî²¹ºóÃæµÄÈ±Ê§Öµ¡£(ÏòºóÌî³ä)
-DMwR::centrallmputation(data) #Ê¹ÓÃÖĞĞÄÖµÌæ»»NA
-DMwR::knnImputation(data,k) #Ê¹ÓÃkÏàÁÚ·ÖÀàËã·¨Çó¼ÓÈ¨Æ½¾ùÖµ
+na.locf() 							#·ÇÈ±Ê§ÖµºóÃæ½ô¸ú×ÅÒ»¸öÈ±Ê§ÖµÊ±£¬¾ÍÓÃ¸Ã·ÇÈ±Ê§ÖµÌî²¹ºóÃæµÄÈ±Ê§Öµ¡£(ÏòºóÌî³ä)
+DMwR::centrallmputation(data) 		#Ê¹ÓÃÖĞĞÄÖµÌæ»»NA
+DMwR::knnImputation(data,k) 		#Ê¹ÓÃkÏàÁÚ·ÖÀàËã·¨Çó¼ÓÈ¨Æ½¾ùÖµ
 #ÔÚ¿íºÍ³¤±í¸ñÖ®¼ä½øĞĞ×ª»»
 library(reshape2)
 newnames <- melt(names , id.vars = "ID") #¿í±ä³¤
 melt(
   data,
-  id.vars = c() ,#Ê¶±ğ×Ö·û
-  measure.vars = c(),#ÈôÊ¡ÂÔÔòidÒÔÍâËùÓĞÁĞ¾ùÊÓÎª²âÁ¿ÖµÁĞ
-  measure.name = "", #Îª²âÁ¿ÖµÃüÃû
+  id.vars = c() ,					#Ê¶±ğ×Ö·û
+  measure.vars = c(),				#ÈôÊ¡ÂÔÔòidÒÔÍâËùÓĞÁĞ¾ùÊÓÎª²âÁ¿ÖµÁĞ
+  measure.name = "", 				#Îª²âÁ¿ÖµÃüÃû
   na.rm = F
 )
+eg. melt(iris,id.vars=1:4)
 dcast(
   data,
   formula #A+B~ ABÎªid.var ~ÓÒ²à
@@ -431,57 +428,47 @@ newnames <- dcast(names,var1~varN) #³¤±ä¿í
 #######Êı¾İ±í
 install.packages("data.table")
 library(data.table)
-data.table(names) #´´½¨Êı¾İ±í
-as.data.table() #½«Êı¾İ¿ò×ª»»ÎªÊı¾İ±í
-tables() #ÁĞ³öÊı¾İ±íÀàµÄËùÓĞ¶ÔÏó
-fread() #¶ÁÈ¡Êı¾İ²¢·µ»Ødt
-data[i, j, by] #iÑ¡ÔñĞĞ£¬ÓÃby·Ö×é£¬È»ºó¼ÆËãj
-.N #±íÊ¾ÔÚµ±Ç°·Ö×éÖĞ£¬¶ÔÏóµÄÊı¾İ£¨¼´Ã¿×éµÄĞĞÊı£©
-A[.N] #×îºóÒ»ĞĞ
-TABLE[1,#µÚÒ»¸ö²ÎÊıÎªĞĞºÅ»òÕßÓĞ¹ØĞĞµÄÂß¼­Öµ
-2, #µÚ¶ş¸ö²ÎÊıÎªÁĞ»òÕßÓĞ¹ØÁĞµÄÂß¼­Öµ
-3] #ÓÃÓÚÉèÖÃ·Ö×é±äÁ¿ 
+data.table(names) 					#´´½¨Êı¾İ±í
+as.data.table() 					#½«Êı¾İ¿ò×ª»»ÎªÊı¾İ±í
+tables() 							#ÁĞ³öÊı¾İ±íÀàµÄËùÓĞ¶ÔÏó
+fread() 							#¶ÁÈ¡Êı¾İ²¢·µ»Ødt
+data[i, j, by] 						#iÑ¡ÔñĞĞ£¬ÓÃby·Ö×é£¬È»ºó¼ÆËãj
+.N 									#±íÊ¾ÔÚµ±Ç°·Ö×éÖĞ£¬¶ÔÏóµÄÊı¾İ£¨¼´Ã¿×éµÄĞĞÊı£©
+A[.N] 								#×îºóÒ»ĞĞ
+TABLE[1,							#µÚÒ»¸ö²ÎÊıÎªĞĞºÅ»òÕßÓĞ¹ØĞĞµÄÂß¼­Öµ
+2, 									#µÚ¶ş¸ö²ÎÊıÎªÁĞ»òÕßÓĞ¹ØÁĞµÄÂß¼­Öµ
+3] 									#ÓÃÓÚÉèÖÃ·Ö×é±äÁ¿ 
 #eg:TABLE[, A, b] ¸ù¾İb·Ö×éµÄAÁĞµÄËùÓĞĞĞ
 setkey(
   table,
-  a #ÉèÖÃa¼ü
+  a 								#ÉèÖÃa¼ü
 )
 setkeyv(
   table,
-  "a" #ÉèÖÃa¼ü£¬µ«Ö»½ÓÊÜ×Ö·ûÏòÁ¿
+  "a" 								#ÉèÖÃa¼ü£¬µ«Ö»½ÓÊÜ×Ö·ûÏòÁ¿
 )
-dt["a1"] #²é¿´a¼üÖĞµÄa1µÄĞĞ
-dt1[dt2] #Èç¹ûÁ½¸ö±í¸ñÓĞÏàÍ¬µÄ¼ü£¬¿ÉÒÔÇáËÉ½«ËüÃÇÁ¬½ÓÔÚÒ»Æğ
-setkey(table,key1,key2) #ÉèÖÃÁ½¸ö¼ü
-table[.("key1",key2)] #key1Îª×Ö·ûĞÍ£¬Ë³Ğò±ØĞëÓëÉèÖÃÒ»ÖÂ
-setDT(data,key = "a") #½«data×ª»»Îªtable£¬aÎª¼ü
-setDF() #½«dt×ª±äÎªdf¡£
-setnames(dt, "a","b") #½«aµÄÃû×Ö±äÎªb
-setcolorder(dt, c("a","b")) #ÅÅÁĞÁĞÃûµÄË³Ğò
-TABLE[J(a),FUN] #´´½¨a¼üºó£¬¼´¿ÉÊ¹ÓÃJ
-TABLE1[TABLE2,y] #ÔÚ1ÖĞ²éÕÒ2¶ÔÓ¦µÄĞĞ£¬²¢Ö´ĞĞÔËËã
-dt[,var := var == ""] #Ìæ»»Ô­ÓĞµÄÁĞ
-dt[,var := ...] #´´½¨ĞÂÁĞ
-dt[,c("var1","var2"):=list(1:6,2:7)] #´´½¨Á½ÁĞ
-dt[,c("var1","var2"):=NULL] #È¡ÏûÁ½ÁĞ
+dt["a1"] 							#²é¿´a¼üÖĞµÄa1µÄĞĞ
+dt1[dt2] 							#Èç¹ûÁ½¸ö±í¸ñÓĞÏàÍ¬µÄ¼ü£¬¿ÉÒÔÇáËÉ½«ËüÃÇÁ¬½ÓÔÚÒ»Æğ
+setkey(table,key1,key2) 			#ÉèÖÃÁ½¸ö¼ü
+table[.("key1",key2)] 				#key1Îª×Ö·ûĞÍ£¬Ë³Ğò±ØĞëÓëÉèÖÃÒ»ÖÂ
+setDT(data,key = "a") 				#½«data×ª»»Îªtable£¬aÎª¼ü
+setDF() 							#½«dt×ª±äÎªdf¡£
+setnames(dt, "a","b") 				#½«aµÄÃû×Ö±äÎªb
+setcolorder(dt, c("a","b")) 		#ÅÅÁĞÁĞÃûµÄË³Ğò
+TABLE[J(a),FUN] 					#´´½¨a¼üºó£¬¼´¿ÉÊ¹ÓÃJ
+TABLE1[TABLE2,y] 					#ÔÚ1ÖĞ²éÕÒ2¶ÔÓ¦µÄĞĞ£¬²¢Ö´ĞĞÔËËã
+dt[,var := var == ""] 				#Ìæ»»Ô­ÓĞµÄÁĞ
+dt[,var := ...] 					#´´½¨ĞÂÁĞ
+dt[,c("var1","var2"):=list(1:6,2:7)]#´´½¨Á½ÁĞ
+dt[,c("var1","var2"):=NULL] 		#È¡ÏûÁ½ÁĞ
 dt[var1 == "B" & var2 > 3, var3:=100]
 dt[, var3:=ifelse(var1 == "B" & var2 > 3, 50 ,var3)]
-dt[, sum(var2), by = var1] #·Ö×éÇóºÍ
-#ÅÅĞò
-sort(a,decreasing = T) #´ÓĞ¡µ½´óÅÅÁĞ,decreasing = T´Ó´óµ½Ğ¡ÅÅÁĞ
-order() #·µ»ØÅÅĞòºó¸÷Êı¾İÔªËØÔÚÔ­Êı¾İ×éÖĞµÄÎ»ÖÃË÷Òı
-var1 <- var[order(var$a),] #¸ù¾İaÅÅĞòµÄvar
-rank() #·µ»ØÔÚÏòÁ¿ÖĞµÄÅÅÃû
-#ÖØ¸´
-rep(runif(1),5) #ÖØ¸´5´ÎÏàÍ¬µÄÊı
-rep(1:2, each = 2)
-rep(1:2, each = 2, time = 2)
-replicate(5,runif(1)) #ÖØ¸´5´Îrunif(1) ²»Í¬µÄÊı
+dt[, sum(var2), by = var1] 			#·Ö×éÇóºÍ
 ######apply family
-group <- split(x,f) #xÎªÏòÁ¿£¬fÎªÒò×Ó£¬ÏòÁ¿·Ö×é£¬·µ»ØÏòÁ¿ÁĞ±í
-subset(x, b, select = c("A", "B")) #Ñ¡È¡xÊı¾İ¿òÖĞ£¬Âú×ãbÌõ¼şµÄABÁ½ÁĞ
+group <- split(x,f) 				#xÎªÏòÁ¿£¬fÎªÒò×Ó£¬ÏòÁ¿·Ö×é£¬·µ»ØÁĞ±í
+subset(x, b, select = c("A", "B")) 	#Ñ¡È¡xÊı¾İ¿òÖĞ£¬Âú×ãbÌõ¼şµÄABÁ½ÁĞ
 
-lapply(list, function) #×÷ÓÃÓÚÁĞ±íµÄÃ¿Ò»¸öÔªËØ£¬·µ»ØÁíÒ»¸öÁĞ±í
+lapply(list, function) 				#×÷ÓÃÓÚÁĞ±íµÄÃ¿Ò»¸öÔªËØ£¬·µ»ØÁíÒ»¸öÁĞ±í
 rapply(object, f, classes = "ANY", deflt = NULL, how = c("unlist", "replace", "list"), ...)
 #object:listÊı¾İ
 #f: ×Ô¶¨ÒåµÄµ÷ÓÃº¯Êı
@@ -516,15 +503,15 @@ sapply(list, function) #¾¡¿ÉÄÜµØ°Ñ½á¹û¼ò»¯µ½Ò»¸öºÏÊÊµÄÏòÁ¿ºÍÊı×éÖĞ(·µ»ØÏòÁ¿¡¢¾ØÕ
 #USE.NAMES: Èç¹ûXÎª×Ö·û´®£¬TRUEÉèÖÃ×Ö·û´®ÎªÊı¾İÃû£¬FALSE²»ÉèÖÃ
 #Ê¹ÓÃas.data.frame£¨£©½«·µ»ØµÄÏòÁ¿x×ª»»ÎªÊı¾İ¿ò
 as.data.frame(t(x)) #×¢Òâ×ªÖÃ
-apply(array, margin, function) #½«º¯ÊıÓ¦ÓÃÓÚÃ¿ĞĞ¡¢Ã¿ÁĞ£¬1ĞĞ2ÁĞ¡£Êı¾İ¿ò½ö°üº¬Êı×ÖÊı¾İ»ò×Ö·û´®Êı¾İ£¬ÏòÊı×é»ò¾ØÕó
-                               #Ó¦ÓÃº¯Êı£¬È»ºó½«½á¹ûÖµÒÔÏòÁ¿¡¢Êı×é»òÁĞ±íĞÎÊ½·µ»Ø
-tapply(data,f,function) #fÎª·Ö×éÒò×Ó£¬½«º¯ÊıÓ¦ÓÃÓÚÃ¿×éÊı¾İ
+apply(array, margin, function) 		#½«º¯ÊıÓ¦ÓÃÓÚÃ¿ĞĞ¡¢Ã¿ÁĞ£¬1ĞĞ2ÁĞ¡£Êı¾İ¿ò½ö°üº¬Êı×ÖÊı¾İ»ò×Ö·û´®Êı¾İ£¬ÏòÊı×é»ò¾ØÕó
+									#Ó¦ÓÃº¯Êı£¬È»ºó½«½á¹ûÖµÒÔÏòÁ¿¡¢Êı×é»òÁĞ±íĞÎÊ½·µ»Ø
+tapply(data,f,function) 			#fÎª·Ö×éÒò×Ó£¬½«º¯ÊıÓ¦ÓÃÓÚÃ¿×éÊı¾İ
 tapply(data,
-       list(data$var1,data$var2), #ÒÔVAR1ºÍVAR2Îª·Ö×é±äÁ¿
+       list(data$var1,data$var2), 	#ÒÔVAR1ºÍVAR2Îª·Ö×é±äÁ¿
        fun,
        na.rm = TRUE)
 tapply(X, INDEX, FUN = NULL, ..., simplify = TRUE)
-with(data,tapply(A,B,max)) #ÒÔBÎª·Ö×é£¬AÎªÖµ£¬Çó×î´ó
+with(data,tapply(A,B,max)) 			#ÒÔBÎª·Ö×é£¬AÎªÖµ£¬Çó×î´ó
 #X: ÏòÁ¿
 #INDEX: ÓÃÓÚ·Ö×éµÄË÷Òı
 #FUN: ×Ô¶¨ÒåµÄµ÷ÓÃº¯Êı
@@ -534,13 +521,13 @@ with(data,tapply(A,B,max)) #ÒÔBÎª·Ö×é£¬AÎªÖµ£¬Çó×î´ó
 #ÆäËû·Ö×é´¦ÀíÊı¾İµÄ´úÂë
 install.packages("doBy")
 library(doBy)
-summaryBy(A + B ~ C, data) #dataÒÀ¾İc·ÖÀà²é¿´AºÍBµÄ¾ùÖµ
-orderBy( ~ a + b, data) #°´ÕÕaºÍb½øĞĞÅÅĞò
+summaryBy(A + B ~ C, data) 			#dataÒÀ¾İc·ÖÀà²é¿´AºÍBµÄ¾ùÖµ
+orderBy( ~ a + b, data) 			#°´ÕÕaºÍb½øĞĞÅÅĞò
 sampleBy( ~ A, frac = 0.1, data = ) #»ùÓÚA·ÖÀà£¬ÊÕÈ¡±ÈÀıÎª10%
 aggregate(
-  y ~ x, #yÊÇÒª¼ÆËãµÄ±äÁ¿
-  data, #Êı¾İ
-  FUN #´ıÓ¦ÓÃµÄº¯Êı
+  y ~ x, 							#yÊÇÒª¼ÆËãµÄ±äÁ¿
+  data, 							#Êı¾İ
+  FUN 								#´ıÓ¦ÓÃµÄº¯Êı
 ) 
 mapply(FUN, ..., MoreArgs = NULL, SIMPLIFY = TRUE,USE.NAMES = TRUE)
 #FUN: ×Ô¶¨ÒåµÄµ÷ÓÃº¯Êı
@@ -549,16 +536,16 @@ mapply(FUN, ..., MoreArgs = NULL, SIMPLIFY = TRUE,USE.NAMES = TRUE)
 #SIMPLIFY: ÊÇ·ñÊı×é»¯£¬µ±ÖµarrayÊ±£¬Êä³ö½á¹û°´Êı×é½øĞĞ·Ö×é
 #USE.NAMES: Èç¹ûXÎª×Ö·û´®£¬TRUEÉèÖÃ×Ö·û´®ÎªÊı¾İÃû£¬FALSE²»ÉèÖÃ
 mapply(
-  data, #ÓÃ×÷²ÎÊıµÄ¾ØÕó»òÊı¾İ¿ò
-  fun #´ıµ÷ÓÃµÄº¯Êı
-) #·µ»ØÖµÎªÊı¾İ¿ò
+  data, 							#ÓÃ×÷²ÎÊıµÄ¾ØÕó»òÊı¾İ¿ò
+  fun 								#´ıµ÷ÓÃµÄº¯Êı
+) 									#·µ»ØÖµÎªÊı¾İ¿ò
 
 #Èç¹ûÏòÁ¿²ÎÊı²»ÊÇÒ»¸ö£¬ÎÒÃÇĞèÒª×Ô¶¨ÒåÒ»¸öº¯ÊıÀ´·â×°ÄÇ¸öÕæÕıÏëµ÷ÓÃµÄº¯Êı£¬¸ü³£¼ûµÄ×ö·¨ÊÇ°Ñº¯ÊıµÄ¶¨Òå°üÀ¨ÔÚlapplyµÄµ÷ÓÃÖĞ¡£
 #####±éÀúÊı×é
 #lapply¡¢vapply¡¢sapply¶¼¿ÉÒÔÓÃÓÚ¾ØÕóºÍÊı×éÉÏ
-library("matlab") #matlab»á¸²¸ÇÒ»Ğ©ÃüÁî£¬Ê¹ÓÃdetach("package:matlab")½â³ı
-magic() #´´½¨Ò»¸ö·½Õó
-apply(array, margin, ...) #1½«º¯ÊıÓ¦ÓÃÓÚÃ¿Ò»ĞĞ£¬2´ú±í½«º¯ÊıÓ¦ÓÃÓÚÃ¿Ò»ÁĞ
+library("matlab") 					#matlab»á¸²¸ÇÒ»Ğ©ÃüÁî£¬Ê¹ÓÃdetach("package:matlab")½â³ı
+magic() 							#´´½¨Ò»¸ö·½Õó
+apply(array, margin, ...) 			#1½«º¯ÊıÓ¦ÓÃÓÚÃ¿Ò»ĞĞ£¬2´ú±í½«º¯ÊıÓ¦ÓÃÓÚÃ¿Ò»ÁĞ
 #µ±°Ñº¯ÊıÓ¦ÓÃÔÚÊı¾İ¿òÉÏ£¬applyºÍsapplyµÄĞĞÎªÏàÍ¬
 ############²ğ·Ö-Ó¦ÓÃ-ºÏ²¢
 install.packages("plyr")
@@ -572,15 +559,15 @@ l*ply(.data, .fun, ..., .progress = "none")
 #.progress¾ö¶¨ÊÇ·ñÏÔÊ¾ÒÔ¼°ÓÃÄÄÖÖ·½Ê½ÏÔÊ¾½ø¶ÈÌõ ¡£"text"ÏÔÊ¾´¦Àí½ø¶ÈÌõ "win"windos×Ô´ø½ø¶ÈÌõ
 library("plyr")
 adply( 
-  data, #¾ØÕó¡¢Êı×é¡¢Êı¾İ¿ò
-  margin, #1 2 »òÕßc(1,2)¶ÔÃ¿¸öÔªËØ½øĞĞÊı¾İ´¦Àí
+  data, 							#¾ØÕó¡¢Êı×é¡¢Êı¾İ¿ò
+  margin, 							#1 2 »òÕßc(1,2)¶ÔÃ¿¸öÔªËØ½øĞĞÊı¾İ´¦Àí
   FUN
-) #·µ»ØÊı¾İ¿ò
+) 									#·µ»ØÊı¾İ¿ò
 
 ddply(
   data,
-  .(var), #ÓÃÓÚÊı¾İ·Ö×éµÄ±äÁ¿. #EG£º   .(a,x > 5) #Á½ÖÖ·ÖÀà .(var1,var2)
-  FUN #±ØĞëÓÃº¯Êıfunction
+  .(var), 							#ÓÃÓÚÊı¾İ·Ö×éµÄ±äÁ¿. #EG£º   .(a,x > 5) #Á½ÖÖ·ÖÀà .(var1,var2)
+  FUN 								#±ØĞëÓÃº¯Êıfunction
 )
 ddply(
   df,
@@ -590,30 +577,30 @@ ddply(
   }
 )
 m*ply(
-  .data,  #ÓÃ×ö²ÎÊıµÄ¾ØÕó»òÕßÊı¾İ¿ò
-  .fun = ,#´ıµ÷ÓÃµÄ²ÎÊı
+  .data,  							#ÓÃ×ö²ÎÊıµÄ¾ØÕó»òÕßÊı¾İ¿ò
+  .fun = ,							#´ıµ÷ÓÃµÄ²ÎÊı
   .inform
 )
-splat() #½«Ô­º¯ÊıÖĞ¶à¸ö²ÎÊı´ò°üÎªÒ»¸ölist×÷Îª²ÎÊı£¬È»ºóÊä³öĞÂµÄº¯Êı
+splat() 							#½«Ô­º¯ÊıÖĞ¶à¸ö²ÎÊı´ò°üÎªÒ»¸ölist×÷Îª²ÎÊı£¬È»ºóÊä³öĞÂµÄº¯Êı
 splat(fun)(data[1,])
-splat(fun)(data) #½«dataÖĞµÄ±äÁ¿ÊäÈëfunÖĞ
+splat(fun)(data) 					#½«dataÖĞµÄ±äÁ¿ÊäÈëfunÖĞ
 # m*ply(data,FUN)µÄ×÷ÓÃºÍa*ply(data,1,splat(FUN)) µÄ×÷ÓÃÒ»Ñù
-each(fun) #Ò»ÏµÁĞº¯Êı×÷ÓÃÔÙÊäÈëµÄÊı¾İÉÏ£¬²¢·µ»ØÒ»¸öÒÑÃüÃûµÄÏòÁ¿£¨²»ÄÜ¸ø×÷ÓÃµÄº¯ÊıÖÆ¶¨¸½¼Ó²ÎÊı£©
+each(fun) 							#Ò»ÏµÁĞº¯Êı×÷ÓÃÔÙÊäÈëµÄÊı¾İÉÏ£¬²¢·µ»ØÒ»¸öÒÑÃüÃûµÄÏòÁ¿£¨²»ÄÜ¸ø×÷ÓÃµÄº¯ÊıÖÆ¶¨¸½¼Ó²ÎÊı£©
 each(fun1,fun2,fun3)(data) 
-colwise() #°Ñ×÷ÓÃÓÚÊı¾İ¿âĞĞÏòÁ¿µÄº¯Êı£¨mean£©×ª»¯ÎªÊı¾İ¿òÁĞÏòÁ¿
+colwise() 							#°Ñ×÷ÓÃÓÚÊı¾İ¿âĞĞÏòÁ¿µÄº¯Êı£¨mean£©×ª»¯ÎªÊı¾İ¿òÁĞÏòÁ¿
 colwise(fun)(data)
-ddply(data,.(var),colwise(fun)) #¶Ô×é±äÁ¿Ó¦ÓÃ
+ddply(data,.(var),colwise(fun)) 	#¶Ô×é±äÁ¿Ó¦ÓÃ
 ddply(data,.(var),colwise(fun,.(var1,var2))) #¶Ô×é±äÁ¿Ó¦ÓÃ,Ö»Êä³övar1ºÍvar2
 ddply(data,.(var),colwise(fun,is.character)) #Ö»×÷ÓÃÓÚ×Ö·ûĞÍ±äÁ¿
 failwith(default = NULL,FUN,quiet = F) #ĞŞÕıÒ»¸öº¯Êı£¬Ê¹µÃº¯Êı³öÏÖ´íÎóÊ±·µ»ØÒ»¸öÄ¬ÈÏÖµ
 fun1 <- failwith(default = ,FUN,quiet = T);fun1(data)
-arrange(dt,var1,var2) #°´ÕÕÁĞ¸øÊı¾İ¿òÅÅĞò£¨ÆäËûÁĞ¸ú×Å±ä£©,ÉıĞò
-arrange(dt,desc(var1)) #½µĞò
-rename(x,replace,warn_missing = T) #Í¨¹ıÃû×ÖĞŞ¸ÄÃû×Ö
+arrange(dt,var1,var2) 				#°´ÕÕÁĞ¸øÊı¾İ¿òÅÅĞò£¨ÆäËûÁĞ¸ú×Å±ä£©,ÉıĞò
+arrange(dt,desc(var1)) 				#½µĞò
+rename(x,replace,warn_missing = T) 	#Í¨¹ıÃû×ÖĞŞ¸ÄÃû×Ö
 rename(data,replace = c("a" = "c"))
-count(df, vars = "",wt_var = ) #Êı¾İÖĞ¹Û²âÖµ¸öÊı(varsÎª·Ö×é)
-count(df,c("var1","var2")) #Á½¸ö±äÁ¿×éºÏµÄÊı
-match_df(x,y,on = NULL) #´ÓÒ»¸öÊı¾İ¿òÖĞÌáÈ¡ÓëÁÁÒ»¸öÊı¾İ¿âÖĞÏàÍ¬µÄĞĞ,onÎªÖÆ¶¨¶Ô±ÈµÄ±äÁ¿£¬Ä¬ÈÏÎªÈ«²¿±äÁ¿
+count(df, vars = "",wt_var = ) 		#Êı¾İÖĞ¹Û²âÖµ¸öÊı(varsÎª·Ö×é)
+count(df,c("var1","var2")) 			#Á½¸ö±äÁ¿×éºÏµÄÊı
+match_df(x,y,on = NULL) 			#´ÓÒ»¸öÊı¾İ¿òÖĞÌáÈ¡ÓëÁÁÒ»¸öÊı¾İ¿âÖĞÏàÍ¬µÄĞĞ,onÎªÖÆ¶¨¶Ô±ÈµÄ±äÁ¿£¬Ä¬ÈÏÎªÈ«²¿±äÁ¿
 count(baseball,"id");longterm = subset(count(baseball,"id"),freq > 25);bb_long <- match_df(baseball,longterm,on = "id")
 join(x,y,by = "VAR",type = "left",match = "all") #byÊÇÖÆ¶¨ÒªÁªºÏµÄ±äÁ¿
 #type = "inner"Ö»ÏÔÊ¾ÓĞÆ¥Åä£»type = "right" type = "left"  ¡°all¡±»ùÓÚÄÇ¸öÊı¾İÆ¥Åä ºÍmergeÀàËÆ
@@ -624,14 +611,14 @@ join(x,y,by = "VAR",type = "left",match = "all") #byÊÇÖÆ¶¨ÒªÁªºÏµÄ±äÁ¿
 ddply(
   data,
   .(var), 
-  transform, #ÔÚÊı¾İÖĞÌí¼ÓnewvarÒ»ÁĞ
+  transform, 						#ÔÚÊı¾İÖĞÌí¼ÓnewvarÒ»ÁĞ
   newvar = oldvar - 1
 )
 #mutate
 ddply(
   data,
   .(var), 
-  mutate, #ÔÚÊı¾İÖĞÌí¼Ó¶àÁĞ
+  mutate, 							#ÔÚÊı¾İÖĞÌí¼Ó¶àÁĞ
   newvar1 = oldvar - 1
   newvar1 = oldvar - 2
 )
@@ -639,22 +626,22 @@ ddply(
 ddply(
   data,
   .(var), 
-  summarise, #Ö»·µ»ØvarºÍnewvar
+  summarise, 						#Ö»·µ»ØvarºÍnewvar
   newvar = min(oldvar) 
 )
 #subset
 ddply(
   data,
   .(var), 
-  subset, #Ö»·µ»ØvarºÍnewvar
+  subset, 							#Ö»·µ»ØvarºÍnewvar
   vara == max(vara) 
 )
 #Ê¹ÓÃdplyr¹ÜµÀ²Ù×÷´¦ÀíÊı¾İ¿ò
 install.packages("dplyr")
-select(data, var1, var2, var3) #·µ»ØÑ¡ÖĞµÄĞÂÁĞ£¬²¢½«ÕâĞ©ÁĞ´¢´æÔÚĞÂ´´½¨µÄ±íÖĞ
+select(data, var1, var2, var3) 		#·µ»ØÑ¡ÖĞµÄĞÂÁĞ£¬²¢½«ÕâĞ©ÁĞ´¢´æÔÚĞÂ´´½¨µÄ±íÖĞ
 filter(data, var == "a", var2 == "b") #·µ»ØÂú×ãµÄÊı¾İ£¬È«²¿ÁĞ
-mutate(data, var = a/b) #´´½¨»òÌæ»»ĞÂÁĞ
-arrange(data, var, desc(var1)) #´´½¨Ò»¸öĞÂÊı¾İ¿ò£¬Õâ¸öÊı¾İ¿òÊÇ°´Ò»¸ö»òÕß¶à¸öÁĞÅÅÁĞµÄ
+mutate(data, var = a/b) 			#´´½¨»òÌæ»»ĞÂÁĞ
+arrange(data, var, desc(var1)) 		#´´½¨Ò»¸öĞÂÊı¾İ¿ò£¬Õâ¸öÊı¾İ¿òÊÇ°´Ò»¸ö»òÕß¶à¸öÁĞÅÅÁĞµÄ
 #dplyr°üÒ²Ìá¹©ÁË·á¸»µÄ¶Ô½Óº¯Êı
 
 
