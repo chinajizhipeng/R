@@ -548,6 +548,8 @@ magic() 							#创建一个方阵
 apply(array, margin, ...) 			#1将函数应用于每一行，2代表将函数应用于每一列
 #当把函数应用在数据框上，apply和sapply的行为相同
 ############拆分-应用-合并
+#revalue
+a$Species <- revalue(a$Species,c("setosa"="jizhipeng"))
 install.packages("plyr")
 plyr包的主函数是**ply形式的，其中首字母可以是(d、l、a)，第二个字母可以是(d、l、a、_)，
 不同的字母表示不同的数据格式，d表示数据框格式，l表示列表，a表示数组，_则表示没有输出。
